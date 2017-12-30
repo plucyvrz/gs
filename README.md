@@ -1,0 +1,2 @@
+# gself
+Bot Self ghoul
