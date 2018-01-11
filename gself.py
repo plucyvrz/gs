@@ -17,9 +17,12 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳
-┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻┳┻
-   ┅༅💎ᏢיԼυϛҕ ɃɕȾ💎༅┅   ┻┳┻┳┻┳┻┳
+helpMessage ="""     •          .          °        *         
+   ✵      .  *       .  ☽  ✮   ˚  •  *   ┳━┳━┳━┳
+✧   ⋆         ✫  .      ✷   ˚ ٜ✬       ┻┳┻┳┻┳┻
+『┅༅💎ᏢיԼυϛҕ ɃɕȾ💎༅┅』 ┳┻┳┻┳┻┳
+       ✮ 　*         ✧　 ✵༌ .    °   ┻┳┻┳┻┳┻
+    ✺     ⋆      ✦       .   *    ٜ    ٞ      ┳┻┳┻┳┻┳
 ╌╍═════════════╍╌┻┳┻┳┻┳┻
  🔥❯╾Kᴇʏᴡᴏʀᴅ Sᴇʟғ╼❮🔥  ┳┻┳┻┳┻┳
 ╌╍═════════════╍╌┻┳┻┳┻┳┻
@@ -142,6 +145,8 @@ groupkey ="""   ─┅༅ই Gʀᴏᴜᴩ Sᴇᴛᴛɪɴɢs ই༅┅─
 ⛄Jᴏɪɴ                         「ᴏɴ/ᴏғғ」
 ⛄Gɴᴀᴍᴇ                     「ᴏɴ/ᴏғғ」
 ⛄Uʀʟ:                          「ᴏɴ/ᴏғғ」
+⛄Rᴇsᴩᴏɴᴛᴀɢ              「ᴏɴ/ᴏғғ」
+⛄Rᴇsᴩᴏɴᴛᴀɢ sᴇᴛ:
 ╌╍════════════════╍╌
 """
 
@@ -190,8 +195,10 @@ wait = {
     "Contact":False,
     "lang":"JP",
     "spam":"Spam",
-    "BlGroup":{}
-    "tag":False,
+    "BlGroup":{},
+    "replyMention":False,
+    "kickMention":False,
+    
 }
 
 mimic = {
@@ -213,6 +220,9 @@ cctv = {
     'cyduk':{},
     }
     
+message = {
+    "replyPesan":" [Autorespon] Penting pc aja"
+}
 contact = cl.getProfile()
 backup = cl.getProfile()
 backup.displayName = contact.displayName
@@ -421,79 +431,6 @@ def NOTIFIED_READ_MESSAGE(op):
 
 def bot(op):
     try:
-    	
-def FancyName():
-    while True:
-        try:
-            profile = cl.getProfile()
-            profile.displayName = "﹝Pʟᴇᴀsᴇ Wᴀɪᴛ. . .﹞"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "﹝Sᴛᴀʀᴛɪɴɢ Pʀᴏɢʀᴇss﹞"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▒░░░░░░░░░ ꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▒░░░░░░░░ ꯱꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▒░░░░░░░ ꯲꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▒░░░░░░ ꯳꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▒░░░░░ ꯴꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▓▒░░░░ ꯵꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▓▓▒░░░ ꯶꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▓▓▓▒░░ ꯷꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▓▓▓▓▒░ ꯸꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▓▓▓▓▓▒ ꯹꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "▓▓▓▓▓▓▓▓▓▓ ꯱꯰꯰%"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "﹝Lᴏᴀᴅɪɴɢ Cᴏᴍᴩʟᴇᴛᴇ﹞"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "﹝Wᴀɪᴛ ᴀ Sᴇᴄᴏɴᴅ﹞"
-            cl.updateProfile(profile)
-            time.sleep(4)
-            profile = cl.getProfile()
-            profile.displayName = "﹝I Aᴍ Pᴜᴛʀᴀ Lᴜᴄʏᴠʀᴢ﹞"
-            cl.updateProfile(profile)
-            time.sleep(4)
-        except:
-            pass
-thread2 = threading.Thread(target=FancyName)
-thread2.daemon = True
-thread2.start()
 
 #---------------------------------------------------------------------------------------#        
         if op.type == 0:
@@ -521,13 +458,13 @@ thread2.start()
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        cl.sendText(op.param1, "Haii kka ngintip aja\nGabung Chatt dong ka...    " +nick[0])
+                                        cl.sendText(op.param1, "Jangan Jadi sider lu " +nick[0])
                                         #random.choice(KAC).kickoutFromGroup(op.param1, [op.param2])
                                     else:
-                                        cl.sendText(op.param1, "Haii kka ngintip aja\nGabung Chatt dong ka...  " +nick[1])
+                                        cl.sendText(op.param1, "Jangan Jadi sider lu " +nick[1])
                                         #random.choice(KAC).kickoutFromGroup(op.param1, [op.param2])
                                 else:
-                                    cl.sendText(op.param1, "Haii kka ngintip aja\nGabung Chatt dong ka...   " +Name)
+                                    cl.sendText(op.param1, "Jangan Jadi sider lu " +Name)
                                     #random.choice(KAC).kickoutFromGroup(op.param1, [op.param2])
                         else:
                             pass
@@ -582,14 +519,43 @@ thread2.start()
                     msg.from_ = msg.from_
                     cl.sendChatChecked(msg.to,msg.id)
 
-
-        if op.type == 26:
             if wait["read"] == True:
                 msg = op.message
                 if msg.toType == 0:
                     msg.to = msg.from_
                     msg.from_ = msg.to
                     cl.sendChatChecked(msg.from_,msg.id)
+                    
+            if 'MENTION' in msg.contentMetadata.keys() != None:#Bisa diubah
+                 if wait["replyMention"] == True:
+                    names = re.findall(r'@(\w+)',msg.text)
+                    mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                    mentionees = mention['MENTIONEES']
+                    for mention in mentionees:
+                        if mention['M'] in mid:
+                            xname = cl.getContact(msg.from_).displayName
+                            xlen = str(len(xname)+1)
+                            msg.contentType = 0
+                            balas = "@" + xname + " " + str(message["replyPesan"])
+                            msg.text = balas
+                            msg.contentMetadata ={'MENTION':'{"MENTIONEES":[{"S":"0","E":'+json.dumps(xlen)+',"M":'+json.dumps(msg.from_)+'}]}','EMTVER':'4'}
+                            cl.sendMessage(msg)
+                            break
+                            
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["kickMention"] == True:
+                     contact = cl.getContact(msg.from_)
+                     cName = contact.displayName
+                     balas = ["Dont Tag Me!! Im Busy, ",cName + " Ngapain Ngetag?, ",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja, ", "-_-, ","Put lagi off, ", cName + " Kenapa Tag saya?, ","SPAM PC aja, " + cName, "Jangan Suka Tag gua, " + cName, "Kamu siapa, " + cName + "?", "Ada Perlu apa, " + cName + "?","Tag doang tidak perlu., ", "Tersummon -_-, "]
+                     ret_ = "[Auto Respond] " + random.choice(balas)
+                     name = re.findall(r'@(\w+)', msg.text)
+                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                     mentionees = mention['MENTIONEES']
+                     for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  cl.sendText(msg.to,ret_)
+                                  cl.kickoutFromGroup(msg.to,[msg.from_])
+                                  break
 #-------------------------------------------------------------------
         if op.type == 11:
             if op.param3 == '1':
@@ -712,7 +678,7 @@ thread2.start()
                     msg.text = "post URL\n" + msg.contentMetadata["postEndUrl"]
                     cl.sendText(msg.to,msg.text)
 #--------------------------------------------------------
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["Key","help","Help me"]:
                 cl.sendText(msg.to,helpMessage)
 #--------------------------------------------------------
             elif msg.text in ["Translate"]:
@@ -891,7 +857,7 @@ thread2.start()
                         cl.sendText(msg.to, 'There is no sider (｀・ω・´)\n\n%s' % (datetime.datetime.now().strftime('%H:%M')))
                         print "Result Sider"
 #-----------------------------------------------------
-            elif "Wl" in msg.text:
+            elif "Wl " in msg.text:
                 print "Whitelist excuting"
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
@@ -909,7 +875,7 @@ thread2.start()
                        except:
                           cl.sendText(msg.to,"Telah ada dalam whitelist")
 
-            elif "Unwl" in msg.text:
+            elif "Unwl " in msg.text:
                 print "Unwhitelist excuting"
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
@@ -984,7 +950,7 @@ thread2.start()
                     cl.sendText(msg.to, "Heh belom di Set") 
                     
 #---------------------------------------------------------
-            elif msg.text in ["Ban"]:
+            elif msg.text in ["Ban "]:
                 print "[Ban]ok"
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
@@ -1002,7 +968,7 @@ thread2.start()
                        except:
                           cl.sendText(msg.to,"Telah ada dalam blacklist")
 
-            elif msg.text in ["Unban"]:
+            elif msg.text in ["Unban "]:
                 print "[Unban]ok"
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
@@ -1031,7 +997,59 @@ thread2.start()
                 cl.sendText(msg.to,"Clearing Ban "+ str(len(wait["blacklist"]))+ " users")
                 wait["blacklist"] = {}
                 cl.sendText(msg.to,"Done 􀜁􀆚Hare Krishna􏿿")
+                
+            elif msg.text in ["Respontag on"]:            
+                wait["replyMention"] = True
+                cl.sendText(msg.to,"Auto respon tag On")
+                
+            elif msg.text in ["Respontag off"]:        
+                wait["replyMention"] = False
+                cl.sendText(msg.to,"Auto respon tag Off")  
+               
+            elif "Respontag set: " in msg.text:
+                c = msg.text.replace("Respontag set: ","")
+                if c in [""," ","\n",None]:
+                    cl.sendText(msg.to,"Merupakan string yang tidak bisa diubah")
+                else:
+                    message["replyPesan"] = c
+                    cl.sendText(msg.to,"Respon tag Diubah menjadi:\n\n" + c)
+
+            elif msg.text in ["Kicktag on","Autokick:on","Responkick on","Responkick:on"]:
+                wait["kickMention"] = True
+                cl.sendText(msg.to,"Auto Kick tag ON")
+                
+            elif msg.text in ["Kicktag off","Autokick:off","Responkick off","Responkick:off"]:
+                wait["kickMention"] = False
+                cl.sendText(msg.to,"Auto Kick tag OFF")
 #--------------------------------------------------------
+            elif "Ready Ghoul" in msg.text:
+				if msg.toType == 2:
+					if msg.toType == 2:
+						print "ok"
+						_name = msg.text.replace("Ready Ghoul","")
+						gs = cl.getGroup(msg.to)
+						gs = cl.getGroup(msg.to)
+						gs = cl.getGroup(msg.to)
+						cl.sendText(msg.to,"Just some casual cleansing ô")
+						cl.sendText(msg.to,"Group cleansed.")
+						targets = []
+						for g in gs.members:
+							if _name in g.displayName:
+								targets.append(g.mid)
+						if targets == []:
+							cl.sendText(msg.to,"Not found.")
+							cl.sendText(msg.to,"Not found.")
+						else:
+							for target in targets:
+								try:
+									klist=[cl,cl,cl]
+									kicker=random.choice(klist)
+									kicker.kickoutFromGroup(msg.to,[target])
+									print (msg.to,[g.mid])
+								except:
+									cl.sendText(msg.to,"Group cleanse")
+									cl.sendText(msg.to,"Group cleanse")
+									
             elif "Kill " in msg.text:
                 if 'MENTION' in msg.contentMetadata.keys()!= None:
                     names = re.findall(r'@(\w+)', msg.text)
@@ -1065,8 +1083,8 @@ thread2.start()
                     cl.rejectGroupInvitation(i)
                 cl.sendText(msg.to,"All invitations have been refused")
 #-------------------------------------------------------
-            elif "Rename:" in msg.text:
-                    string = msg.text.replace("Rename:","")
+            elif "Rename: " in msg.text:
+                    string = msg.text.replace("Rename: ","")
                     if len(string.decode('utf-8')) <= 20000:
                         profile = cl.getProfile()
                         profile.displayName = string
@@ -1895,6 +1913,7 @@ thread2.start()
                         hasil += '\nDurasi : ' + song[1]
                         hasil += '\nLink Download : ' + song[4]
                         cl.sendText(msg.to, hasil)
+                        cl.sendText(msg.to,"Wait for audio. . .")
                         cl.sendAudioWithURL(msg.to, song[4])
                 except Exception as njer:
                   cl.sendText(msg.to, str(njer))
